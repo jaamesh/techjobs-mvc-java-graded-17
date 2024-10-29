@@ -40,7 +40,9 @@ public class SearchController {
         }
         model.addAttribute("jobs", jobs);
 
-        return "list-jobs";
+        model.addAttribute("columns", columnChoices);
+
+        return "search";
     }
 
 }
